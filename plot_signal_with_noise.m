@@ -8,11 +8,11 @@ function plot_signal_with_noise(testCase, s1_v1, s1_v2, s2_v1, s2_v2, s1, s2, ph
 
 	% E / sigma^2 list in dB 
 	EoSigma = [-5, 0, 10];
-	Es1 = sqrt(dot(s1, s1)) / sqrt(length(s1));
-	Es2 = sqrt(dot(s2, s2)) / sqrt(length(s2));
+	Es1 = dot(s1, s1) / sqrt(length(s1));
+	Es2 = dot(s2, s2) / sqrt(length(s2));
 
-	sigma1 = Es1 ./ db2mag(EoSigma);
-	sigma2 = Es2 ./ db2mag(EoSigma);
+	sigma1 = sqrt(Es1 ./ db2mag(EoSigma));
+	sigma2 = sqrt(Es2 ./ db2mag(EoSigma));
 
 	for i = 1 : 100
 		r1 = signal_space_with_noise(s1, sigma1(testCase));
