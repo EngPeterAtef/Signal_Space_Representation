@@ -1,3 +1,4 @@
+% plot_signal_with_noise.m
 function plot_signal_with_noise(testCase, s1_v1, s1_v2, s2_v1, s2_v2, s1, s2, phi1, phi2)
 	% Draw the signal space representation of the signals before adding noise
 	figure('Name', 'Signal Points with Noise', 'NumberTitle', 'off');

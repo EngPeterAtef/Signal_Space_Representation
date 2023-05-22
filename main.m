@@ -53,7 +53,7 @@ grid on;
 
 % =================================================================
 % REQUIREMENTS 3:
-% Function calls to plot the signals with noise
+% Function calls to plot the signals with noise in main.m
 plot_signal_with_noise(1, s1_v1, s1_v2, s2_v1, s2_v2, s1, s2, phi1, phi2);
 plot_signal_with_noise(2, s1_v1, s1_v2, s2_v1, s2_v2, s1, s2, phi1, phi2);
 plot_signal_with_noise(3, s1_v1, s1_v2, s2_v1, s2_v2, s1, s2, phi1, phi2);
