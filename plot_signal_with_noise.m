@@ -14,7 +14,7 @@ function plot_signal_with_noise(testCase, s1_v1, s1_v2, s2_v1, s2_v2, s1, s2, ph
 	sigma1 = Es1 ./ db2mag(EoSigma);
 	sigma2 = Es2 ./ db2mag(EoSigma);
 
-	for i = 1 : 50
+	for i = 1 : 100
 		r1 = signal_space_with_noise(s1, sigma1(testCase));
 		r2 = signal_space_with_noise(s2, sigma2(testCase));
 
